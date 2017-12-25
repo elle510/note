@@ -26,8 +26,8 @@ cursor = coll.find_one({"title": "Hello world"})
 # print(cursor['title'])
 
 def index(request):
-    return render(request, '/memo/index.html', {'cursor': cursor['title']})
+    return render(request, 'memo/index.html', {'cursor': cursor['title']})
     # return HttpResponse(cursor['title'])#HttpResponse("Hello, world. You're at the memo index.")
 
 def test(request):
-    return render(request, '/memo/test.html', {'cursor': cursor['title']})
+    return render(request, 'memo/test.html', {'cursor': cursor['title']})
