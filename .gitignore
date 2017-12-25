@@ -1,2 +1,4 @@
 .DS_Store
 .idea
+note/__pycache__
+memo/__pycache__
