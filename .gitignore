@@ -8,3 +8,4 @@ tcl/
 pip-selfcheck.json
 note/note/__pycache__
 note/memo/__pycache__
+note/memo/migrations/__pycache__
