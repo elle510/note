@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Test
 
 # Create your views here.
 
@@ -31,3 +32,8 @@ def index(request):
 
 def test(request):
     return render(request, 'memo/test.html', {'cursor': cursor['title']})
+
+def postgres(request):
+    data = Test.objects.filter(id=1)
+    # print(data[0].id)
+    return render(request, 'memo/postgres.html', {'data': data[0]})
