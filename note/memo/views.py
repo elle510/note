@@ -8,14 +8,16 @@ from django.http import HttpResponse
 from pymongo import MongoClient
 
 # db connection
-client = MongoClient()
+# client = MongoClient()
+client = MongoClient("mongodb://nkia:nkia123@ds113000.mlab.com:13000/ahn_test")
 # client = MongoClient("localhost", 27017)
 # client = MongoClient("mongodb://mongodb0.example.net:27017")
 
 # database 얻어오기
 # > db          현재 사용중인 db
 # > show dbs    db 리스트 확인
-db = client.test
+# db = client.test      # local mongodb
+db = client.ahn_test    # mLab mongodb
 
 # 컬렉션 가져오기
 coll = db.articles
