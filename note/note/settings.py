@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # 'auth.apps.AuthConfig',
+    # 'authentication.apps.AuthenticationConfig',
+    'authentication',
     'memo.apps.MemoConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -130,4 +133,5 @@ STATIC_URL = '/static/'
 
 # LOGIN_URL = '/accounts/login/'
 # LOGOUT_URL = '/accounts/logout'
+# LOGIN_URL = '/auth/login/'
 LOGIN_REDIRECT_URL = '/'
