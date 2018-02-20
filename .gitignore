@@ -10,3 +10,5 @@ pip-selfcheck.json
 note/note/__pycache__
 note/memo/__pycache__
 note/memo/migrations/__pycache__
+note/authentication/__pycache__
+note/authentication/migrations/__pycache__
