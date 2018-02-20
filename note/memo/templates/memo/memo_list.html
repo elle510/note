@@ -6,12 +6,12 @@
 </head>
 <body>
 
-<h1>Servers</h1>
+<h1>Memos</h1>
 <ul>
-    {% for server in object_list %}
-    <li>{{ server.title }}  :
-    <a href="{% url "memo_edit" server.id %}">edit</a>
-    <a href="{% url "memo_delete" server.id %}">delete</a>
+    {% for memo in object_list %}
+    <li>{{ memo.title }}  :
+    <a href="{% url "memo_edit" memo.id %}">[edit]<!--{{ memo.title }}--></a>
+    <a href="{% url "memo_delete" memo.id %}">[delete]</a>
     </li>
     {% endfor %}
 </ul>
