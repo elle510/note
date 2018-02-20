@@ -14,7 +14,7 @@ def signup(request):
         if form.is_valid():
             new_user = User.objects.create_user(**form.cleaned_data)
             login(request, new_user)
-            return redirect('index')
+            return redirect('memo_list')
     else:
         form = UserForm()
         return render(request, 'authentication/join.html', {'form': form})
